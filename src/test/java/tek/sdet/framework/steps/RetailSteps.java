@@ -24,8 +24,8 @@ public class RetailSteps extends CommonUtility {
 		String expectedTitle = "React App";
 		Assert.assertEquals(expectedTitle, actualTitle);
 		Assert.assertTrue(isElementDisplayed(factory.homePage().tekScoolLogo));
-		logger.info("user is on retail website");
-		logger.info("Actual title " + actualTitle + " Equals ExpectedTtile " + expectedTitle);
+		logger.info("User is on retail website");
+		logger.info("Actual title " + actualTitle + " Equals Expected Ttile " + expectedTitle);
 	}
 
 	@When("User search for {string} product")
@@ -44,7 +44,7 @@ public class RetailSteps extends CommonUtility {
 	@When("User click on All section")
 	public void userClickOnAllSection() {
 		click(factory.homePage().allIcon);
-		logger.info("user clicked on All section");
+		logger.info("User clicked on All section");
 	}
 
 	@Then("below options are present in Shop by Department sidebar")
@@ -87,7 +87,7 @@ public class RetailSteps extends CommonUtility {
 			if (el.equals(department)) {
 				click(option);
 				try {
-					logger.info("user clicked on " + el + " sidebar option");
+					logger.info("User clicked on " + el + " sidebar option");
 				} catch (StaleElementReferenceException e) {
 
 				}
@@ -106,11 +106,92 @@ public class RetailSteps extends CommonUtility {
 			for (WebElement dept : actualDepartmentOptions) {
 				if (dept.getText().equals(expectedDepartmentOptions.get(0).get(i))) {
 					Assert.assertTrue(isElementDisplayed(dept));
-					logger.info("department " + dept.getText() + " is present");
+					logger.info("Department " + dept.getText() + " is present");
 				}
 
 			}
 		}
+	}
+
+	@When("User change the category to {string}")
+	public void userChangeTheCategoryTo(String category) {
+		waitTillPresence(factory.homePage().allDepartmentDropDown);
+		selectByVisibleText(factory.homePage().allDepartmentDropDown, category);
+		logger.info("User changed the search category to " + category);
+
+	}
+
+	@When("User search for an item {string}")
+	public void userSearchForAnItem(String itemValue) {
+		sendText(factory.homePage().searchBar, itemValue);
+		logger.info("User entered in the search bar an item value " + itemValue);
+	}
+
+	@When("User click on Search icon")
+	public void userClickOnSearchIcon() {
+		click(factory.homePage().searchButton);
+		logger.info("User clicked on search icon");
+	}
+
+	@When("User click on item")
+	public void userClickOnItem() {
+		click(factory.homePage().firstItemFound);
+		logger.info("User clicked on found item");
+	}
+
+	@When("User select quantity {string}")
+	public void userSelectQuantity(String quantity) {
+		selectByValue(factory.homePage().quantityDropdown, quantity);
+		logger.info("User selected the quantity " + quantity);
+	}
+
+	@When("User click add to Cart button")
+	public void userClickAddToCartButton() {
+		click(factory.homePage().addToCartButton);
+		logger.info("User clicked on Add to Cart Button");
+
+	}
+
+	@Then("the cart icon quantity should change to {string}")
+	public void theCartIconQuantityShouldChangeTo(String cartIconQuantity) {
+		Assert.assertEquals(factory.homePage().cartIconQuantity.getText(), cartIconQuantity);
+		logger.info("The cart icon quantity changed to 2");
+	}
+
+	@Then("User click on Cart option")
+	public void userClickOnCartOption() {
+		click(factory.homePage().cartButton);
+		logger.info("User clicked on cart button");
+	}
+
+	@Then("User click on Proceed to Checkout button")
+	public void userClickOnProceedToCheckoutButton() {
+		click(factory.homePage().proceedToChekOutButton);
+		logger.info("User clicked on Proceed to Checkout button");
+	}
+
+	@Then("User click Add a new address link for shipping address")
+	public void userClickAddANewAddressLinkForShippingAddress() {
+		click(factory.homePage().checkoutAddAddressButton);
+		logger.info("User clicked on Add a new address button");
+	}
+
+	@Then("User click Add a Credit or Debit Card for Payment method")
+	public void userClickAddACreditOrDebitCardForPaymentMethod() {
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		waitTillClickable(factory.homePage().checkoutAddCardButton);
+		click(factory.homePage().checkoutAddCardButton);
+		logger.info("User clicked on Add a Credit or Debit Card button");
+	}
+
+	@Then("User click on Place Your Order")
+	public void userClickOnPlaceYourOrder() {
+		click(factory.homePage().placeYourOrderButton);
+		logger.info("User clicked on Place Your Order Button");
 	}
 
 }

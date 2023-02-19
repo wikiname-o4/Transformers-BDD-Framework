@@ -35,6 +35,9 @@ public class RetailHomePage extends BaseSetup {
 
 	@FindBy(id = "cartBtn")
 	public WebElement cartButton;
+	
+	@FindBy(css="#orderLink")
+	public WebElement ordersButton;
 
 	@FindBy(xpath = "//img[contains(@alt, 'Pokemon')]")
 	public WebElement pokemonProductImage;
@@ -42,29 +45,51 @@ public class RetailHomePage extends BaseSetup {
 	@FindBy(xpath = "//a[text()='Account']")
 	public WebElement accountOption;
 
-	@FindBy(id="hamburgerBtn")
+	@FindBy(id = "hamburgerBtn")
 	public WebElement allIcon;
-	
-	@FindBy(xpath="//div[@class='sidebar_content-item']/span")
+
+	@FindBy(xpath = "//div[@class='sidebar_content-item']/span")
 	public List<WebElement> sideBarElements;
-	
-	@FindBy(xpath="//div[@class='sidebar_content-item']/span")
+
+	@FindBy(xpath = "//div[@class='sidebar_content-item']/span")
 	public List<WebElement> sideBarOptionElements;
-	
-	@FindBy(xpath="//span[text()='Electronics']")
+
+	@FindBy(xpath = "//span[text()='Electronics']")
 	public WebElement electronicsSideBar;
-	
-	@FindBy(xpath="//span[text()='Computers']")
+
+	@FindBy(xpath = "//span[text()='Computers']")
 	public WebElement computersSideBar;
-	
-	@FindBy(xpath="//span[text()='Smart Home']")
+
+	@FindBy(xpath = "//span[text()='Smart Home']")
 	public WebElement smarthomeSideBar;
-	
-	@FindBy(xpath="//span[text()='Sports']")
+
+	@FindBy(xpath = "//span[text()='Sports']")
 	public WebElement sportsSideBar;
-	
-	@FindBy(xpath="//span[text()='Automative']")
+
+	@FindBy(xpath = "//span[text()='Automative']")
 	public WebElement automativeSideBar;
-	
-	
+
+	@FindBy(xpath = "//div[@class='products__layout'][1]")
+	public WebElement firstItemFound;
+
+	@FindBy(xpath = "//select[@class='product__select']")
+	public WebElement quantityDropdown;
+
+	@FindBy(css = "#addToCartBtn")
+	public WebElement addToCartButton;
+
+	@FindBy(css = "#cartQuantity")
+	public WebElement cartIconQuantity;
+
+	@FindBy(css = "#proceedBtn")
+	public WebElement proceedToChekOutButton;
+
+	@FindBy(css = "#addAddressBtn")
+	public WebElement checkoutAddAddressButton;
+
+	@FindBy(css = "#addPaymentBtn")
+	public WebElement checkoutAddCardButton;
+
+	@FindBy(css = "#placeOrderBtn")
+	public WebElement placeYourOrderButton;
 }

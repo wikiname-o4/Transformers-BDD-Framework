@@ -27,26 +27,27 @@ public class SignInSteps extends CommonUtility {
 	public void userEnterEmailAndPassword(String emailValue, String passwordValue) {
 		sendText(factory.signInPage().emailField, emailValue);
 		sendText(factory.signInPage().passwordField, passwordValue);
-		logger.info("user entered email " + emailValue + "and password " + passwordValue);
+		logger.info("User entered email " + emailValue + " and password " + passwordValue);
 
 	}
 
 	@When("User click on login button")
 	public void userClickOnLoginButton() {
 		click(factory.signInPage().loginPageButton);
-		logger.info("user clicked on login button");
+		logger.info("User clicked on login button");
 
 	}
 
 	@Then("User should be logged in into Account")
 	public void userShouldBeLoggedInIntoAccount() {
 		Assert.assertTrue(isElementDisplayed(factory.homePage().accountOption));
+		logger.info("User logged in into Account");
 	}
 
 	@When("User click on Create New Account button")
 	public void userClickOnCreateNewAccountButton() {
 		click(factory.signInPage().createNewAccountButton);
-		logger.info("user clicked on Create New Account button");
+		logger.info("User clicked on Create New Account button");
 
 	}
 
@@ -63,20 +64,20 @@ public class SignInSteps extends CommonUtility {
 		sendText(factory.signInPage().signUpEmailField, signUpInformation.get(0).get("email"));
 		sendText(factory.signInPage().signUpPasswordField, signUpInformation.get(0).get("password"));
 		sendText(factory.signInPage().signUpConfirmPassword, signUpInformation.get(0).get("confirmPassword"));
-		logger.info("user filled the signUp information form");
+		logger.info("User filled the signUp information form");
 	}
 
 	@When("User click on SignUp button")
 	public void userClickOnSignUpButton() {
 		click(factory.signInPage().signUpFormButton);
-		logger.info("user clicked on SignUpForm button");
+		logger.info("User clicked on SignUpForm button");
 	}
 
 	@Then("User should be logged into account page")
 	public void userShouldBeLoggedIntoAccountPage() {
 		waitTillPresence(factory.accountPage().profileImage);
 		Assert.assertTrue(isElementDisplayed(factory.accountPage().profileImage));
-		logger.info("user is logged in into account page");
+		logger.info("User is logged in into account page");
 
 	}
 

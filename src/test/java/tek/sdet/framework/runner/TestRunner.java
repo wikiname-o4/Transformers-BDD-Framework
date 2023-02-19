@@ -8,7 +8,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@RetailHomePageFeatureScenario3Test",
+		tags = "@RetailOrderFeatureScenario3SmokeTest",
 		features = ("classpath:features"),
 		glue = "tek.sdet.framework",
 		dryRun = false,
@@ -20,7 +20,6 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 		snippets = CAMELCASE,
 		monochrome = true
 		)
-
 public class TestRunner {
 
 }
