@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tek.sdet.framework.base.BaseSetup;
 import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
@@ -171,8 +172,8 @@ public class CommonUtility extends BaseSetup {
 	}
 
 	public WebElement fluientWaitforElement(WebElement element, int timoutSec, int pollingSec) {
-		FluentWait<WebDriver> fWait = new FluentWait<WebDriver>(getDriver()).withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofSeconds(30)).ignoring(NoSuchElementException.class, TimeoutException.class)
+		FluentWait<WebDriver> fWait = new FluentWait<WebDriver>(getDriver()).withTimeout(Duration.ofSeconds(timoutSec))
+				.pollingEvery(Duration.ofSeconds(pollingSec)).ignoring(NoSuchElementException.class, TimeoutException.class)
 				.ignoring(StaleElementReferenceException.class);
 		for (int i = 0; i < 2; i++)
 			fWait.until(ExpectedConditions.visibilityOf(element));
@@ -207,5 +208,17 @@ public class CommonUtility extends BaseSetup {
 	public void scrollPageDownWithJS() {
 		JavascriptExecutor js = ((JavascriptExecutor) getDriver());
 		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+	}
+	
+	public void turnOffImplicitWaits() {
+		getDriver().manage().timeouts().implicitlyWait(Duration.of(0, ChronoUnit.SECONDS));
+	}
+	
+	public void turnOnImplicitWaits() {
+		getDriver().manage().timeouts().implicitlyWait(Duration.of(20, ChronoUnit.SECONDS));
+	}
+	
+	public void waitTillDisappears(WebElement element) {
+		this.getWait().until(ExpectedConditions.invisibilityOf(element));
 	}
 }

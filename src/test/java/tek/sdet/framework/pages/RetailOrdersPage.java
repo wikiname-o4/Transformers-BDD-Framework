@@ -35,20 +35,19 @@ public class RetailOrdersPage extends BaseSetup {
 
 	@FindBy(css = "#dropOffInput")
 	public WebElement dropOffServiceDropdown;
-	
+
 	@FindBy(xpath = "//div[@class='return__confirm-message']")
 	public WebElement returnConfirmMessage;
-	
-	
-	@FindBy(xpath="(//button[@id='reviewBtn'])[1]")
+
+	@FindBy(xpath = "(//button[@id='reviewBtn'])[1]")
 	public WebElement firstReviewButton;
-	
-	@FindBy(css="#headlineInput")
+
+	@FindBy(css = "#headlineInput")
 	public WebElement headlineField;
-	
-	@FindBy(css="#descriptionInput")
+
+	@FindBy(css = "#descriptionInput")
 	public WebElement reviewCommentField;
-	
-	@FindBy(css="#reviewSubmitBtn")
+
+	@FindBy(css = "#reviewSubmitBtn")
 	public WebElement addYourReviewButton;
 }

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tek.sdet.framework.runner.TestRunner" time="41.762" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\Wikiname\Desktop\TEK SCHOOL\JAVA\Workspace\my-bdd-framework\target\test-classes;C:\Users\Wikiname\Desktop\TEK SCHOOL\JAVA\Workspace\my-bdd-framework\target\classes;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-java\7.8.0\cucumber-java-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-core\7.8.0\cucumber-core-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-gherkin\7.8.0\cucumber-gherkin-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.8.0\cucumber-gherkin-messages-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\gherkin\24.0.0\gherkin-24.0.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\messages\19.1.2\messages-19.1.2.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-expressions\16.0.0\cucumber-expressions-16.0.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\datatable\7.8.0\datatable-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-plugin\7.8.0\cucumber-plugin-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\docstring\7.8.0\docstring-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\html-formatter\20.1.0\html-formatter-20.1.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\Wikiname\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-junit\7.8.0\cucumber-junit-7.8.0.jar;C:\Users\Wikiname\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Wikiname\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-java\4.4.0\selenium-java-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-api\4.4.0\selenium-api-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.4.0\selenium-chrome-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Wikiname\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Wikiname\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Wikiname\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Wikiname\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Wikiname\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Wikiname\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Wikiname\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Wikiname\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Wikiname\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.4.0\selenium-chromium-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-json\4.4.0\selenium-json-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.4.0\selenium-devtools-v102-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.4.0\selenium-devtools-v103-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v104\4.4.0\selenium-devtools-v104-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.4.0\selenium-devtools-v85-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.4.0\selenium-edge-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.4.0\selenium-firefox-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.4.0\selenium-ie-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.4.0\selenium-opera-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.4.0\selenium-remote-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-api\1.16.0\opentelemetry-api-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-context\1.16.0\opentelemetry-context-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.16.0\opentelemetry-exporter-logging-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.16.0\opentelemetry-sdk-metrics-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.16.0-alpha\opentelemetry-sdk-logs-1.16.0-alpha.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.16.0\opentelemetry-sdk-common-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.16.0\opentelemetry-sdk-extension-autoconfigure-spi-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.16.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.16.0-alpha.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.16.0\opentelemetry-sdk-trace-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.16.0\opentelemetry-sdk-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.16.0-alpha\opentelemetry-semconv-1.16.0-alpha.jar;C:\Users\Wikiname\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Wikiname\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Wikiname\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Wikiname\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Wikiname\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Wikiname\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Wikiname\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-http\4.4.0\selenium-http-4.4.0.jar;C:\Users\Wikiname\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.4.0\selenium-safari-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-support\4.4.0\selenium-support-4.4.0.jar;C:\Users\Wikiname\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.0\webdrivermanager-5.3.0.jar;C:\Users\Wikiname\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Wikiname\.m2\repository\com\google\code\gson\gson\2.9.1\gson-2.9.1.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Wikiname\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Wikiname\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Wikiname\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Wikiname\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Wikiname\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Wikiname\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Wikiname\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Wikiname\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Wikiname\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Wikiname\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Wikiname\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Wikiname\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\Wikiname\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Wikiname\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Wikiname\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Wikiname\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Wikiname\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Wikiname\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Wikiname\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.16.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Wikiname\AppData\Local\Temp\surefire8861583325066625594\surefirebooter-20230220125705957_3.jar C:\Users\Wikiname\AppData\Local\Temp\surefire8861583325066625594 2023-02-20T12-57-05_483-jvmRun1 surefire-20230220125705957_1tmp surefire_0-20230220125705957_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Wikiname\Desktop\TEK SCHOOL\JAVA\Workspace\my-bdd-framework\target\test-classes;C:\Users\Wikiname\Desktop\TEK SCHOOL\JAVA\Workspace\my-bdd-framework\target\classes;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-java\7.8.0\cucumber-java-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-core\7.8.0\cucumber-core-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-gherkin\7.8.0\cucumber-gherkin-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.8.0\cucumber-gherkin-messages-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\gherkin\24.0.0\gherkin-24.0.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\messages\19.1.2\messages-19.1.2.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-expressions\16.0.0\cucumber-expressions-16.0.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\datatable\7.8.0\datatable-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-plugin\7.8.0\cucumber-plugin-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\docstring\7.8.0\docstring-7.8.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\html-formatter\20.1.0\html-formatter-20.1.0.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\Wikiname\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Wikiname\.m2\repository\io\cucumber\cucumber-junit\7.8.0\cucumber-junit-7.8.0.jar;C:\Users\Wikiname\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Wikiname\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-java\4.4.0\selenium-java-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-api\4.4.0\selenium-api-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.4.0\selenium-chrome-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Wikiname\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Wikiname\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Wikiname\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Wikiname\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Wikiname\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Wikiname\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Wikiname\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Wikiname\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Wikiname\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.4.0\selenium-chromium-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-json\4.4.0\selenium-json-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.4.0\selenium-devtools-v102-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.4.0\selenium-devtools-v103-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v104\4.4.0\selenium-devtools-v104-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.4.0\selenium-devtools-v85-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.4.0\selenium-edge-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.4.0\selenium-firefox-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.4.0\selenium-ie-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.4.0\selenium-opera-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.4.0\selenium-remote-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-api\1.16.0\opentelemetry-api-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-context\1.16.0\opentelemetry-context-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.16.0\opentelemetry-exporter-logging-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.16.0\opentelemetry-sdk-metrics-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.16.0-alpha\opentelemetry-sdk-logs-1.16.0-alpha.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.16.0\opentelemetry-sdk-common-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.16.0\opentelemetry-sdk-extension-autoconfigure-spi-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.16.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.16.0-alpha.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.16.0\opentelemetry-sdk-trace-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.16.0\opentelemetry-sdk-1.16.0.jar;C:\Users\Wikiname\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.16.0-alpha\opentelemetry-semconv-1.16.0-alpha.jar;C:\Users\Wikiname\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Wikiname\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Wikiname\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Wikiname\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Wikiname\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Wikiname\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Wikiname\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Wikiname\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-http\4.4.0\selenium-http-4.4.0.jar;C:\Users\Wikiname\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.4.0\selenium-safari-driver-4.4.0.jar;C:\Users\Wikiname\.m2\repository\org\seleniumhq\selenium\selenium-support\4.4.0\selenium-support-4.4.0.jar;C:\Users\Wikiname\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.0\webdrivermanager-5.3.0.jar;C:\Users\Wikiname\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Wikiname\.m2\repository\com\google\code\gson\gson\2.9.1\gson-2.9.1.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Wikiname\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Wikiname\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Wikiname\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Wikiname\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Wikiname\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Wikiname\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\Wikiname\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Wikiname\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Wikiname\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\Wikiname\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Wikiname\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Wikiname\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Wikiname\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\Wikiname\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Wikiname\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Wikiname\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Wikiname\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Wikiname\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Wikiname\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Wikiname\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Wikiname\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Wikiname\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Wikiname"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.16.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\Wikiname\Desktop\TEK SCHOOL\JAVA\Workspace\my-bdd-framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Wikiname\AppData\Local\Temp\surefire8861583325066625594\surefirebooter-20230220125705957_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.16.1+1-LTS-1"/>
+    <property name="user.name" value="Wikiname"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Wikiname\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Wikiname\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.16.1"/>
+    <property name="user.dir" value="C:\Users\Wikiname\Desktop\TEK SCHOOL\JAVA\Workspace\my-bdd-framework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.16.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Wikiname/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257/jre/bin/server;C:/Users/Wikiname/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20221004-1257/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.2.0\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\Wikiname\AppData\Local\Microsoft\WindowsApps;;C:\Users\Wikiname\Desktop\TEK SCHOOL;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.16.1+1-LTS-1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="Verify User can update Profile Information" classname="Retail Application Account Feature" time="5.959">
+    <system-out><![CDATA[
+@CompleteTest @RetailAccountFeatureCompleteTest @RetailAccountFeatureScenario1SmokeTest
+Scenario: Verify User can update Profile Information                     # features/RetailAccount.feature:12
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                        # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                      # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas002@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas002@' # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                         # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                              # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                      # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:33)- User updated name to Luqmon and phone number to 7077777777
+  And User update Name 'Luqmon' and Phone '7077777777'                   # tek.sdet.framework.steps.RetailAccountSteps.userUpdateNameAndPhone(java.lang.String,java.lang.String)
+ INFO [main] (RetailAccountSteps.java:39)- User clicked on Update Button
+  And User click on Update Button                                        # tek.sdet.framework.steps.RetailAccountSteps.userClickOnUpdateButton()
+ INFO [main] (RetailAccountSteps.java:46)- Profile information updated succesfully
+  Then User profile information should be updated                        # tek.sdet.framework.steps.RetailAccountSteps.userProfileInformationShouldBeUpdated()
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 64109
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926629.578][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify User can add a payment method" classname="Retail Application Account Feature" time="4.357">
+    <system-out><![CDATA[
+@CompleteTest @RetailAccountFeatureCompleteTest @RetailAccountFeatureScenario3SmokeTest
+Scenario: Verify User can add a payment method                           # features/RetailAccount.feature:33
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                        # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                      # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas002@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas002@' # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                         # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                              # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                      # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:89)- User clicked on Add a payment method link
+  And User click on Add a payment method link                            # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAddAPaymentMethodLink()
+ INFO [main] (RetailAccountSteps.java:102)- User filled up the credit card information
+  And User fill Debit or credit card information                         # tek.sdet.framework.steps.RetailAccountSteps.userFillDebitOrCreditCardInformation(io.cucumber.datatable.DataTable)
+    | cardNumber       | nameOnCard      | expirationMonth | expirationYear | securityCode |
+    | 4647634817091108 | Stephon Wiegand | 7               | 2023           | 677          |
+ INFO [main] (RetailAccountSteps.java:108)- User clicked on Add Your card button
+  And User click on Add your card button                                 # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAddYourCardButton()
+ INFO [main] (RetailAccountSteps.java:83)- Payment Method added sucessfully
+  Then a message should be displayed 'Payment Method added sucessfully'  # tek.sdet.framework.steps.RetailAccountSteps.aMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 57967
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926634.044][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify User can edit Debit or Credit card" classname="Retail Application Account Feature" time="4.699">
+    <system-out><![CDATA[
+@CompleteTest @RetailAccountFeatureCompleteTest @RetailAccountFeatureScenario4SmokeTest
+Scenario: Verify User can edit Debit or Credit card                        # features/RetailAccount.feature:43
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                          # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                        # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas002@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas002@'   # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                           # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                                # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                        # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:114)- User selected first card from the list
+ INFO [main] (RetailAccountSteps.java:116)- User clicked on Edit button
+  And User click on Edit option of card section                            # tek.sdet.framework.steps.RetailAccountSteps.userClickOnEditOptionOfCardSection()
+ INFO [main] (RetailAccountSteps.java:132)- User filled up the credit card information
+  And user edit information with below data                                # tek.sdet.framework.steps.RetailAccountSteps.userEditInformationWithBelowData(io.cucumber.datatable.DataTable)
+    | cardNumber       | nameOnCard   | expirationMonth | expirationYear | securityCode |
+    | 4647634817092278 | Luqmon Hakim | 7               | 2025           | 687          |
+ INFO [main] (RetailAccountSteps.java:139)- User Clicked on Update Your Card button
+  And user click on Update Your Card button                                # tek.sdet.framework.steps.RetailAccountSteps.userClickOnUpdateYourCardButton()
+ INFO [main] (RetailAccountSteps.java:83)- Payment Method updated Successfully
+  Then a message should be displayed 'Payment Method updated Successfully' # tek.sdet.framework.steps.RetailAccountSteps.aMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 64323
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926638.308][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify User can remove Debit or Credit card" classname="Retail Application Account Feature" time="3.835">
+    <system-out><![CDATA[
+@CompleteTest @RetailAccountFeatureCompleteTest @RetailAccountFeatureScenario5SmokeTest
+Scenario: Verify User can remove Debit or Credit card                    # features/RetailAccount.feature:53
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                        # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                      # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas002@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas002@' # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                         # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                              # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                      # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:145)- User selected first card from the list
+ INFO [main] (RetailAccountSteps.java:147)- User clicked on remove button
+  And User click on remove option of card section                        # tek.sdet.framework.steps.RetailAccountSteps.userClickOnRemoveOptionOfCardSection()
+ INFO [main] (RetailAccountSteps.java:161)- Card removed successfully
+  Then payment details should be removed                                 # tek.sdet.framework.steps.RetailAccountSteps.paymentDetailsShouldBeRemoved()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 49363
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926643.082][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify User can add an Address" classname="Retail Application Account Feature" time="4.78">
+    <system-out><![CDATA[
+@CompleteTest @RetailAccountFeatureCompleteTest @RetailAccountFeatureScenario6SmokeTest
+Scenario: Verify User can add an Address                                 # features/RetailAccount.feature:59
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                        # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                      # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas002@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas002@' # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                         # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                              # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                      # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:167)- User clicked on Add Address option
+  And User click on Add address option                                   # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAddAddressOption()
+ INFO [main] (RetailAccountSteps.java:188)- User entered new address information
+  And user fill new address form with below information                  # tek.sdet.framework.steps.RetailAccountSteps.userFillNewAddressFormWithBelowInformation(io.cucumber.datatable.DataTable)
+    | country       | fullName     | phoneNumber | streetAddress | apt | city       | state    | zipCode |
+    | United States | Luqmon Hakim | 58640039889 | 2002 D Street | 2   | Southfield | Michigan | 48075   |
+ INFO [main] (RetailAccountSteps.java:196)- User clicked on Add Your Address button
+  And User click Add Your Address button                                 # tek.sdet.framework.steps.RetailAccountSteps.userClickAddYourAddressButton()
+ INFO [main] (RetailAccountSteps.java:83)- Address Added Successfully
+  Then a message should be displayed 'Address Added Successfully'        # tek.sdet.framework.steps.RetailAccountSteps.aMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 61121
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926646.830][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify User can edit an Address added on account" classname="Retail Application Account Feature" time="4.927">
+    <system-out><![CDATA[
+@CompleteTest @RetailAccountFeatureCompleteTest @RetailAccountFeatureScenario7SmokeTest
+Scenario: Verify User can edit an Address added on account               # features/RetailAccount.feature:69
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                        # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                      # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas002@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas002@' # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                         # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                              # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                      # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:202)- User clicked on Edit button for last address in list
+  And User click on edit address option                                  # tek.sdet.framework.steps.RetailAccountSteps.userClickOnEditAddressOption()
+ INFO [main] (RetailAccountSteps.java:188)- User entered new address information
+  And user fill new address form with below information                  # tek.sdet.framework.steps.RetailAccountSteps.userFillNewAddressFormWithBelowInformation(io.cucumber.datatable.DataTable)
+    | country       | fullName     | phoneNumber | streetAddress | apt | city       | state    | zipCode |
+    | United States | Luqmon Hakim | 58640239719 | 2002 D Street | 2   | Southfield | Michigan | 48075   |
+ INFO [main] (RetailAccountSteps.java:208)- User clicked on Update Your Address button
+  And User click update Your Address button                              # tek.sdet.framework.steps.RetailAccountSteps.userClickUpdateYourAddressButton()
+ INFO [main] (RetailAccountSteps.java:83)- Address Updated Successfully
+  Then a message should be displayed 'Address Updated Successfully'      # tek.sdet.framework.steps.RetailAccountSteps.aMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 55559
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926651.718][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify User can remove Address from Account" classname="Retail Application Account Feature" time="3.675">
+    <system-out><![CDATA[
+@CompleteTest @RetailAccountFeatureCompleteTest @RetailAccountFeatureScenario8SmokeTest
+Scenario: Verify User can remove Address from Account                    # features/RetailAccount.feature:79
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                        # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                      # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas002@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas002@' # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                         # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                              # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                      # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:218)- User clicked on Remove button on the last address field
+  And User click on remove option of Address section                     # tek.sdet.framework.steps.RetailAccountSteps.userClickOnRemoveOptionOfAddressSection()
+ INFO [main] (RetailAccountSteps.java:234)- Address detail succesfully removed
+  Then Address details should be removed                                 # tek.sdet.framework.steps.RetailAccountSteps.addressDetailsShouldBeRemoved()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 54756
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926656.549][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify User can Update password #1" classname="Retail Application Account PAss Feature" time="4.499">
+    <system-out><![CDATA[
+@RetailAccountFeatureScenario2SmokeTest @RetailAccountFeatureCompleteTest
+Scenario Outline: Verify User can Update password                        # features/RetailAccountUpdatePassword.feature:18
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                        # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                      # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas002@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas002@' # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                         # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                              # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                      # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:58)- User entered old password 'Lukas002@' and new password 'Lukas001@' and confirm password 'Lukas001@
+  And User enter below information                                       # tek.sdet.framework.steps.RetailAccountSteps.userEnterBelowInformation(io.cucumber.datatable.DataTable)
+    | previousPassword | newPassword | confirmPassword |
+    | Lukas002@        | Lukas001@   | Lukas001@       |
+ INFO [main] (RetailAccountSteps.java:67)- User clicked on Change Password
+  And User click on Change Password button                               # tek.sdet.framework.steps.RetailAccountSteps.userClickOnChangePasswordButton()
+ INFO [main] (RetailAccountSteps.java:83)- Password Updated Successfully
+  Then a message should be displayed 'Password Updated Successfully'     # tek.sdet.framework.steps.RetailAccountSteps.aMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 64981
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926660.320][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify User can Update password #2" classname="Retail Application Account PAss Feature" time="4.152">
+    <system-out><![CDATA[
+@RetailAccountFeatureScenario2SmokeTest @RetailAccountFeatureCompleteTest
+Scenario Outline: Verify User can Update password                        # features/RetailAccountUpdatePassword.feature:19
+ INFO [main] (RetailSteps.java:27)- User is on retail website
+ INFO [main] (RetailSteps.java:28)- Actual title React App Equals Expected Ttile React App
+  Given User is on retail website                                        # tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()
+ INFO [main] (SignInSteps.java:22)- User clicked on Sign In option
+  When User click on Sing in option                                      # tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()
+ INFO [main] (SignInSteps.java:30)- User entered email luqmon.hakim@gmail.com and password Lukas001@
+  And User enter email 'luqmon.hakim@gmail.com' and password 'Lukas001@' # tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)
+ INFO [main] (SignInSteps.java:37)- User clicked on login button
+  And User click on login button                                         # tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()
+ INFO [main] (SignInSteps.java:44)- User logged in into Account
+  And User should be logged in into Account                              # tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()
+ INFO [main] (RetailAccountSteps.java:24)- User clicked on Account option
+  When User click on Account option                                      # tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()
+ INFO [main] (RetailAccountSteps.java:58)- User entered old password 'Lukas001@' and new password 'Lukas002@' and confirm password 'Lukas002@
+  And User enter below information                                       # tek.sdet.framework.steps.RetailAccountSteps.userEnterBelowInformation(io.cucumber.datatable.DataTable)
+    | previousPassword | newPassword | confirmPassword |
+    | Lukas001@        | Lukas002@   | Lukas002@       |
+ INFO [main] (RetailAccountSteps.java:67)- User clicked on Change Password
+  And User click on Change Password button                               # tek.sdet.framework.steps.RetailAccountSteps.userClickOnChangePasswordButton()
+ INFO [main] (RetailAccountSteps.java:83)- Password Updated Successfully
+  Then a message should be displayed 'Password Updated Successfully'     # tek.sdet.framework.steps.RetailAccountSteps.aMessageShouldBeDisplayed(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 49266
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1676926664.727][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Feb 20, 2023 12:57:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Feb 20, 2023 12:57:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+Feb 20, 2023 12:57:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+Feb 20, 2023 12:57:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

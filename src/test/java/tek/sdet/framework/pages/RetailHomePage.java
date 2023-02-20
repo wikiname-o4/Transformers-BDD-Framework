@@ -35,8 +35,8 @@ public class RetailHomePage extends BaseSetup {
 
 	@FindBy(id = "cartBtn")
 	public WebElement cartButton;
-	
-	@FindBy(css="#orderLink")
+
+	@FindBy(css = "#orderLink")
 	public WebElement ordersButton;
 
 	@FindBy(xpath = "//img[contains(@alt, 'Pokemon')]")

@@ -1,5 +1,7 @@
 package tek.sdet.framework.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -81,7 +83,10 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(xpath = "//button[@id='paymentSubmitBtn']")
 	public WebElement updateYourCardButton;
 
-	@FindBy(xpath = "//p[contains(text(),'Add Address')]")
+//	@FindBy(xpath = "//p[contains(text(),'Add Address')]")
+//	public WebElement addAddressOption;
+
+	@FindBy(xpath = "//div[@class='account__address-new']")
 	public WebElement addAddressOption;
 
 	@FindBy(xpath = "//select[@id='countryDropdown']")
@@ -114,8 +119,14 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(css = "#addressBtn")
 	public WebElement updateYourAddressButton;
 
+	@FindBy(xpath = "//div[@class='account__address-single']")
+	public List<WebElement> addressBoxes;
+
+	@FindBy(xpath = "//div[@class='account__address-new-modal']")
+	public WebElement newAddressPopup;
+
 	@FindBy(xpath = "//div[@class='account__address-single'][1]")
-	public WebElement addressesBox;
+	public WebElement addressBox;
 
 	@FindBy(xpath = "//div[@class='account__address-single'][last()]//button[@class='account__address-btn' and text()='Edit']")
 	public WebElement editAddressButton;

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+        <td>1</td>
+      <td>20 Feb 2023, 12:57</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">tek.sdet.framework.base.BaseUITest.closeTests(io.cucumber.java.Scenario)</td>
+              <td>9</td>
+              <td class="duration" data-value="99513122">0.099</td>
+              <td class="duration" data-value="99513122">0.121</td>
+              <td class="duration" data-value="895618100">0.895</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.base.BaseUITest.setupTest()</td>
+              <td>9</td>
+              <td class="duration" data-value="2229223655">2.229</td>
+              <td class="duration" data-value="2229223655">3.642</td>
+              <td class="duration" data-value="20063012900">20.063</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.aMessageShouldBeDisplayed(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="859025816">0.859</td>
+              <td class="duration" data-value="859025816">1.111</td>
+              <td class="duration" data-value="5154154900">5.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.addressDetailsShouldBeRemoved()</td>
+              <td>1</td>
+              <td class="duration" data-value="508052700">0.508</td>
+              <td class="duration" data-value="508052700">0.508</td>
+              <td class="duration" data-value="508052700">0.508</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.paymentDetailsShouldBeRemoved()</td>
+              <td>1</td>
+              <td class="duration" data-value="529002300">0.529</td>
+              <td class="duration" data-value="529002300">0.529</td>
+              <td class="duration" data-value="529002300">0.529</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickAddYourAddressButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="75352000">0.075</td>
+              <td class="duration" data-value="75352000">0.075</td>
+              <td class="duration" data-value="75352000">0.075</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnAccountOption()</td>
+              <td>9</td>
+              <td class="duration" data-value="97157622">0.097</td>
+              <td class="duration" data-value="97157622">0.103</td>
+              <td class="duration" data-value="874418600">0.874</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnAddAPaymentMethodLink()</td>
+              <td>1</td>
+              <td class="duration" data-value="67814200">0.067</td>
+              <td class="duration" data-value="67814200">0.067</td>
+              <td class="duration" data-value="67814200">0.067</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnAddAddressOption()</td>
+              <td>1</td>
+              <td class="duration" data-value="83795300">0.083</td>
+              <td class="duration" data-value="83795300">0.083</td>
+              <td class="duration" data-value="83795300">0.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnAddYourCardButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="64052400">0.064</td>
+              <td class="duration" data-value="64052400">0.064</td>
+              <td class="duration" data-value="64052400">0.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnChangePasswordButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="83887700">0.083</td>
+              <td class="duration" data-value="83887700">0.086</td>
+              <td class="duration" data-value="167775400">0.167</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnEditAddressOption()</td>
+              <td>1</td>
+              <td class="duration" data-value="337990400">0.337</td>
+              <td class="duration" data-value="337990400">0.337</td>
+              <td class="duration" data-value="337990400">0.337</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnEditOptionOfCardSection()</td>
+              <td>1</td>
+              <td class="duration" data-value="375940700">0.375</td>
+              <td class="duration" data-value="375940700">0.375</td>
+              <td class="duration" data-value="375940700">0.375</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnRemoveOptionOfAddressSection()</td>
+              <td>1</td>
+              <td class="duration" data-value="255211200">0.255</td>
+              <td class="duration" data-value="255211200">0.255</td>
+              <td class="duration" data-value="255211200">0.255</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnRemoveOptionOfCardSection()</td>
+              <td>1</td>
+              <td class="duration" data-value="320062600">0.320</td>
+              <td class="duration" data-value="320062600">0.320</td>
+              <td class="duration" data-value="320062600">0.320</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnUpdateButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="77858600">0.077</td>
+              <td class="duration" data-value="77858600">0.077</td>
+              <td class="duration" data-value="77858600">0.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickOnUpdateYourCardButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="61992800">0.061</td>
+              <td class="duration" data-value="61992800">0.061</td>
+              <td class="duration" data-value="61992800">0.061</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userClickUpdateYourAddressButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="67918100">0.067</td>
+              <td class="duration" data-value="67918100">0.067</td>
+              <td class="duration" data-value="67918100">0.067</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userEditInformationWithBelowData(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="489062700">0.489</td>
+              <td class="duration" data-value="489062700">0.489</td>
+              <td class="duration" data-value="489062700">0.489</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userEnterBelowInformation(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="259306100">0.259</td>
+              <td class="duration" data-value="259306100">0.267</td>
+              <td class="duration" data-value="518612200">0.518</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userFillDebitOrCreditCardInformation(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="396386600">0.396</td>
+              <td class="duration" data-value="396386600">0.396</td>
+              <td class="duration" data-value="396386600">0.396</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userFillNewAddressFormWithBelowInformation(io.cucumber.datatable.DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="863499900">0.863</td>
+              <td class="duration" data-value="863499900">0.872</td>
+              <td class="duration" data-value="1726999800">1.726</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userProfileInformationShouldBeUpdated()</td>
+              <td>1</td>
+              <td class="duration" data-value="760313700">0.760</td>
+              <td class="duration" data-value="760313700">0.760</td>
+              <td class="duration" data-value="760313700">0.760</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailAccountSteps.userUpdateNameAndPhone(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="293829600">0.293</td>
+              <td class="duration" data-value="293829600">0.293</td>
+              <td class="duration" data-value="293829600">0.293</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.RetailSteps.userIsOnRetailWebsite()</td>
+              <td>9</td>
+              <td class="duration" data-value="40587177">0.040</td>
+              <td class="duration" data-value="40587177">0.078</td>
+              <td class="duration" data-value="365284600">0.365</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.SignInSteps.userClickOnLoginButton()</td>
+              <td>9</td>
+              <td class="duration" data-value="64541344">0.064</td>
+              <td class="duration" data-value="64541344">0.079</td>
+              <td class="duration" data-value="580872100">0.580</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.SignInSteps.userClickOnSingInOption()</td>
+              <td>9</td>
+              <td class="duration" data-value="87567788">0.087</td>
+              <td class="duration" data-value="87567788">0.100</td>
+              <td class="duration" data-value="788110100">0.788</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.SignInSteps.userEnterEmailAndPassword(java.lang.String,java.lang.String)</td>
+              <td>9</td>
+              <td class="duration" data-value="179721977">0.179</td>
+              <td class="duration" data-value="179721977">0.202</td>
+              <td class="duration" data-value="1617497800">1.617</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tek.sdet.framework.steps.SignInSteps.userShouldBeLoggedInIntoAccount()</td>
+              <td>9</td>
+              <td class="duration" data-value="352413744">0.352</td>
+              <td class="duration" data-value="352413744">0.392</td>
+              <td class="duration" data-value="3171723700">3.171</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>29</td>
+            <td>101</td>
+            <td class="duration">0.402</td>
+            <td class="duration">20.063</td>
+            <td class="duration">40.688</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
