@@ -76,25 +76,27 @@ public class RetailOrdersSteps extends CommonUtility {
 
 	@Then("a return message should be displayed {string}")
 	public void aReturnMessageShouldBeDisplayed(String returnConfirmMessageValue) {
-		Assert.assertEquals(factory.ordersPage().returnConfirmMessage.getText(),returnConfirmMessageValue);
+		Assert.assertEquals(factory.ordersPage().returnConfirmMessage.getText(), returnConfirmMessageValue);
 		logger.info("Return confirmation message displayed " + returnConfirmMessageValue);
 	}
-	
+
 	@When("User click on Review button")
 	public void userClickOnReviewButton() {
-	    click(factory.ordersPage().firstReviewButton);
-	    logger.info("User clicked on Review Button");
+		click(factory.ordersPage().firstReviewButton);
+		logger.info("User clicked on Review Button");
 	}
+
 	@When("User write Review headline {string} and {string}")
 	public void userWriteReviewHeadlineAnd(String headlineValue, String commentValue) {
-	    sendText(factory.ordersPage().headlineField, headlineValue);
-	    sendText(factory.ordersPage().reviewCommentField, commentValue);
-	    logger.info("User entered headline and written review data");
+		sendText(factory.ordersPage().headlineField, headlineValue);
+		sendText(factory.ordersPage().reviewCommentField, commentValue);
+		logger.info("User entered headline and written review data");
 	}
+
 	@When("User click Add your Review button")
 	public void userClickAddYourReviewButton() {
-	    click(factory.ordersPage().addYourReviewButton);
-	    logger.info("User clicked on Add Your Review Button");
+		click(factory.ordersPage().addYourReviewButton);
+		logger.info("User clicked on Add Your Review Button");
 	}
 
 }

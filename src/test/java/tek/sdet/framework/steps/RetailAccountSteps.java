@@ -12,11 +12,8 @@ import tek.sdet.framework.pages.POMFactory;
 import tek.sdet.framework.utilities.CommonUtility;
 
 public class RetailAccountSteps extends CommonUtility {
-	
 
 	private POMFactory factory = new POMFactory();
-	
-
 
 	@When("User click on Account option")
 	public void userClickOnAccountOption() {
@@ -54,7 +51,7 @@ public class RetailAccountSteps extends CommonUtility {
 				passwordInformation.get(0).get("previousPassword"));
 		sendText(factory.accountPage().profileNewPasswordField, passwordInformation.get(0).get("newPassword"));
 		sendText(factory.accountPage().profileNewPassConfimField, passwordInformation.get(0).get("confirmPassword"));
-		
+
 		logger.info("User entered old password '" + passwordInformation.get(0).get("previousPassword")
 				+ "' and new password '" + passwordInformation.get(0).get("newPassword") + "' and confirm password '"
 				+ passwordInformation.get(0).get("confirmPassword"));
@@ -78,7 +75,12 @@ public class RetailAccountSteps extends CommonUtility {
 //New Version - multi functional	
 	@Then("a message should be displayed {string}")
 	public void aMessageShouldBeDisplayed(String messageValue) {
-		waitTillPresence(factory.accountPage().messageBar);
+		try {
+			Thread.sleep(700);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Assert.assertEquals(messageValue, factory.accountPage().messageBar.getText());
 		logger.info(messageValue);
 	}
@@ -188,7 +190,6 @@ public class RetailAccountSteps extends CommonUtility {
 		logger.info("User entered new address information");
 
 	}
-	
 
 	@When("User click Add Your Address button")
 	public void userClickAddYourAddressButton() {
@@ -207,20 +208,18 @@ public class RetailAccountSteps extends CommonUtility {
 		click(factory.accountPage().updateYourAddressButton);
 		logger.info("User clicked on Update Your Address button");
 	}
-	
-	
+
 	public static int addressesCount;
 
 	@When("User click on remove option of Address section")
 	public void userClickOnRemoveOptionOfAddressSection() {
-		addressesCount=factory.accountPage().addressBoxes.size();
+		addressesCount = factory.accountPage().addressBoxes.size();
 		click(factory.accountPage().removeAddressButton);
 		logger.info("User clicked on Remove button on the last address field");
 	}
 
-	
 //////////////////////////  Temporary solution 
-	
+
 	@Then("Address details should be removed")
 	public void addressDetailsShouldBeRemoved() {
 		try {
@@ -229,11 +228,10 @@ public class RetailAccountSteps extends CommonUtility {
 			e.printStackTrace();
 		}
 		turnOffImplicitWaits();
-		Assert.assertEquals(factory.accountPage().addressBoxes.size(), addressesCount-1);
+		Assert.assertEquals(factory.accountPage().addressBoxes.size(), addressesCount - 1);
 		turnOnImplicitWaits();
 		logger.info("Address detail succesfully removed");
-		
+
 	}
-	
 
 }

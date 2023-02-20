@@ -14,6 +14,5 @@ public class SafariBrowser implements Browser {
 		driver.get(url);
 		return driver;
 	}
-	
 
 }

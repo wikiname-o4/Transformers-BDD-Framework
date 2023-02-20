@@ -30,7 +30,7 @@ public class ReadYamlFiles {
 	// this method checks if there is an instance of a class or not
 	public static ReadYamlFiles getInstance(String filePath) throws FileNotFoundException {
 
-		if(readYamlFiles==null)
+		if (readYamlFiles == null)
 			return new ReadYamlFiles(filePath);
 		return readYamlFiles;
 	}

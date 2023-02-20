@@ -13,7 +13,7 @@ public class ChromeHeadless implements Browser {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
-		WebDriver driver = new  ChromeDriver(options);
+		WebDriver driver = new ChromeDriver(options);
 		driver.get(url);
 		return driver;
 	}

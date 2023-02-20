@@ -15,20 +15,19 @@ Feature: Retail Application Account Feature
     And User click on Update Button
     Then User profile information should be updated
 
-  #@RetailAccountFeatureScenario2SmokeTest
+  #@RetailAccountFeatureScenario2SmokeTest      -------------------------------------- Moved To separate Feature File
   #Scenario Outline: Verify User can Update password
-    #When User click on Account option
-    #And User enter below information
-      #| previousPassword   | newPassword   | confirmPassword   |
-      #| <previousPassword> | <newPassword> | <confirmPassword> |
-    #And User click on Change Password button
-    #Then a message should be displayed 'Password Updated Successfully'
-#
-    #Examples: 
-      #| previousPassword | newPassword | confirmPassword |
-      #| Lukas002@        | Lukas001@   | Lukas001@       |
-      #| Lukas001@        | Lukas002@   | Lukas002@       |
-
+  #When User click on Account option
+  #And User enter below information
+  #| previousPassword   | newPassword   | confirmPassword   |
+  #| <previousPassword> | <newPassword> | <confirmPassword> |
+  #And User click on Change Password button
+  #Then a message should be displayed 'Password Updated Successfully'
+  #
+  #Examples:
+  #| previousPassword | newPassword | confirmPassword |
+  #| Lukas002@        | Lukas001@   | Lukas001@       |
+  #| Lukas001@        | Lukas002@   | Lukas002@       |
   @RetailAccountFeatureScenario3SmokeTest
   Scenario: Verify User can add a payment method
     When User click on Account option

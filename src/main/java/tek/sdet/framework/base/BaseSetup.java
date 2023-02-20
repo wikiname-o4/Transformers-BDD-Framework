@@ -23,7 +23,6 @@ public class BaseSetup {
 	private static WebDriver webDriver;
 	private final ReadYamlFiles environmentVariables;
 	public static Logger logger;
-	
 
 	@SuppressWarnings("static-access")
 	public BaseSetup() {

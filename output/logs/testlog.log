@@ -1,94 +1,119 @@
-2023-02-20 12:57:11,082 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:11,089 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:11,190 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:11,393 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
-2023-02-20 12:57:11,469 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:11,862 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:11,966 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:12,259 - logger_file -INFO - User updated name to Luqmon and phone number to 7077777777
-2023-02-20 12:57:12,338 - logger_file -INFO - User clicked on Update Button
-2023-02-20 12:57:13,098 - logger_file -INFO - Profile information updated succesfully
-2023-02-20 12:57:15,431 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:15,431 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:15,523 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:15,697 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
-2023-02-20 12:57:15,761 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:16,107 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:16,212 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:16,281 - logger_file -INFO - User clicked on Add a payment method link
-2023-02-20 12:57:16,677 - logger_file -INFO - User filled up the credit card information
-2023-02-20 12:57:16,742 - logger_file -INFO - User clicked on Add Your card button
-2023-02-20 12:57:17,492 - logger_file -INFO - Payment Method added sucessfully
-2023-02-20 12:57:19,699 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:19,700 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:19,791 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:19,982 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
-2023-02-20 12:57:20,061 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:20,397 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:20,495 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:20,802 - logger_file -INFO - User selected first card from the list
-2023-02-20 12:57:20,871 - logger_file -INFO - User clicked on Edit button
-2023-02-20 12:57:21,360 - logger_file -INFO - User filled up the credit card information
-2023-02-20 12:57:21,423 - logger_file -INFO - User Clicked on Update Your Card button
-2023-02-20 12:57:22,174 - logger_file -INFO - Payment Method updated Successfully
-2023-02-20 12:57:24,377 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:24,377 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:24,464 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:24,644 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
-2023-02-20 12:57:24,706 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:25,051 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:25,147 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:25,396 - logger_file -INFO - User selected first card from the list
-2023-02-20 12:57:25,467 - logger_file -INFO - User clicked on remove button
-2023-02-20 12:57:25,996 - logger_file -INFO - Card removed successfully
-2023-02-20 12:57:28,238 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:28,238 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:28,322 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:28,495 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
-2023-02-20 12:57:28,556 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:28,948 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:29,041 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:29,124 - logger_file -INFO - User clicked on Add Address option
-2023-02-20 12:57:29,996 - logger_file -INFO - User entered new address information
-2023-02-20 12:57:30,073 - logger_file -INFO - User clicked on Add Your Address button
-2023-02-20 12:57:30,818 - logger_file -INFO - Address Added Successfully
-2023-02-20 12:57:32,958 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:32,958 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:33,046 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:33,240 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
-2023-02-20 12:57:33,304 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:33,644 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:33,733 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:34,072 - logger_file -INFO - User clicked on Edit button for last address in list
-2023-02-20 12:57:34,926 - logger_file -INFO - User entered new address information
-2023-02-20 12:57:34,994 - logger_file -INFO - User clicked on Update Your Address button
-2023-02-20 12:57:35,742 - logger_file -INFO - Address Updated Successfully
-2023-02-20 12:57:37,868 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:37,868 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:37,952 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:38,117 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
-2023-02-20 12:57:38,176 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:38,523 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:38,617 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:38,872 - logger_file -INFO - User clicked on Remove button on the last address field
-2023-02-20 12:57:39,380 - logger_file -INFO - Address detail succesfully removed
-2023-02-20 12:57:41,702 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:41,703 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:41,785 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:41,958 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
-2023-02-20 12:57:42,015 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:42,356 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:42,459 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:42,727 - logger_file -INFO - User entered old password 'Lukas002@' and new password 'Lukas001@' and confirm password 'Lukas001@
-2023-02-20 12:57:42,808 - logger_file -INFO - User clicked on Change Password
-2023-02-20 12:57:43,920 - logger_file -INFO - Password Updated Successfully
-2023-02-20 12:57:45,916 - logger_file -INFO - User is on retail website
-2023-02-20 12:57:45,917 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
-2023-02-20 12:57:45,997 - logger_file -INFO - User clicked on Sign In option
-2023-02-20 12:57:46,162 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas001@
-2023-02-20 12:57:46,222 - logger_file -INFO - User clicked on login button
-2023-02-20 12:57:46,557 - logger_file -INFO - User logged in into Account
-2023-02-20 12:57:46,653 - logger_file -INFO - User clicked on Account option
-2023-02-20 12:57:46,904 - logger_file -INFO - User entered old password 'Lukas001@' and new password 'Lukas002@' and confirm password 'Lukas002@
-2023-02-20 12:57:46,992 - logger_file -INFO - User clicked on Change Password
-2023-02-20 12:57:48,042 - logger_file -INFO - Password Updated Successfully
+2023-02-20 13:28:27,280 - logger_file -INFO - User is on retail website
+2023-02-20 13:28:27,287 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:28:27,396 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:28:27,579 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:28:27,641 - logger_file -INFO - User clicked on login button
+2023-02-20 13:28:27,977 - logger_file -INFO - User logged in into Account
+2023-02-20 13:28:30,170 - logger_file -INFO - User is on retail website
+2023-02-20 13:28:30,170 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:28:30,263 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:28:30,453 - logger_file -INFO - User entered email transformers@tekschool.us and password Tek@12345
+2023-02-20 13:28:30,522 - logger_file -INFO - User clicked on login button
+2023-02-20 13:28:30,872 - logger_file -INFO - User logged in into Account
+2023-02-20 13:28:32,888 - logger_file -INFO - User is on retail website
+2023-02-20 13:28:32,889 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:28:32,983 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:28:33,159 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:28:33,224 - logger_file -INFO - User clicked on login button
+2023-02-20 13:28:33,558 - logger_file -INFO - User logged in into Account
+2023-02-20 13:28:35,540 - logger_file -INFO - User is on retail website
+2023-02-20 13:28:35,541 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:28:35,629 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:28:35,697 - logger_file -INFO - User clicked on Create New Account button
+2023-02-20 13:28:36,040 - logger_file -INFO - User filled the signUp information form
+2023-02-20 13:28:36,109 - logger_file -INFO - User clicked on SignUpForm button
+2023-02-20 13:28:37,080 - logger_file -INFO - User is logged in into account page
+2023-02-20 13:30:44,416 - logger_file -INFO - User is on retail website
+2023-02-20 13:30:44,426 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:30:44,559 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:30:44,780 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:30:44,848 - logger_file -INFO - User clicked on login button
+2023-02-20 13:30:45,191 - logger_file -INFO - User logged in into Account
+2023-02-20 13:30:45,322 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:30:45,686 - logger_file -INFO - User updated name to Luqmon and phone number to 7077777777
+2023-02-20 13:30:45,778 - logger_file -INFO - User clicked on Update Button
+2023-02-20 13:30:46,522 - logger_file -INFO - Profile information updated succesfully
+2023-02-20 13:30:48,647 - logger_file -INFO - User is on retail website
+2023-02-20 13:30:48,648 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:30:48,765 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:30:48,973 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:30:49,039 - logger_file -INFO - User clicked on login button
+2023-02-20 13:30:49,393 - logger_file -INFO - User logged in into Account
+2023-02-20 13:30:49,506 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:30:49,583 - logger_file -INFO - User clicked on Add a payment method link
+2023-02-20 13:30:50,022 - logger_file -INFO - User filled up the credit card information
+2023-02-20 13:30:50,103 - logger_file -INFO - User clicked on Add Your card button
+2023-02-20 13:30:50,832 - logger_file -INFO - Payment Method added sucessfully
+2023-02-20 13:30:53,066 - logger_file -INFO - User is on retail website
+2023-02-20 13:30:53,066 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:30:53,159 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:30:53,371 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:30:53,437 - logger_file -INFO - User clicked on login button
+2023-02-20 13:30:53,774 - logger_file -INFO - User logged in into Account
+2023-02-20 13:30:53,891 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:30:54,119 - logger_file -INFO - User selected first card from the list
+2023-02-20 13:30:54,199 - logger_file -INFO - User clicked on Edit button
+2023-02-20 13:30:54,701 - logger_file -INFO - User filled up the credit card information
+2023-02-20 13:30:54,765 - logger_file -INFO - User Clicked on Update Your Card button
+2023-02-20 13:30:55,490 - logger_file -INFO - Payment Method updated Successfully
+2023-02-20 13:30:57,725 - logger_file -INFO - User is on retail website
+2023-02-20 13:30:57,725 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:30:57,815 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:30:58,039 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:30:58,101 - logger_file -INFO - User clicked on login button
+2023-02-20 13:30:58,435 - logger_file -INFO - User logged in into Account
+2023-02-20 13:30:58,537 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:30:58,810 - logger_file -INFO - User selected first card from the list
+2023-02-20 13:30:58,881 - logger_file -INFO - User clicked on remove button
+2023-02-20 13:30:59,401 - logger_file -INFO - Card removed successfully
+2023-02-20 13:31:01,385 - logger_file -INFO - User is on retail website
+2023-02-20 13:31:01,386 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:31:01,474 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:31:01,678 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:31:01,741 - logger_file -INFO - User clicked on login button
+2023-02-20 13:31:02,080 - logger_file -INFO - User logged in into Account
+2023-02-20 13:31:02,181 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:31:02,287 - logger_file -INFO - User clicked on Add Address option
+2023-02-20 13:31:03,257 - logger_file -INFO - User entered new address information
+2023-02-20 13:31:03,344 - logger_file -INFO - User clicked on Add Your Address button
+2023-02-20 13:31:04,077 - logger_file -INFO - Address Added Successfully
+2023-02-20 13:31:06,298 - logger_file -INFO - User is on retail website
+2023-02-20 13:31:06,298 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:31:06,406 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:31:06,609 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:31:06,672 - logger_file -INFO - User clicked on login button
+2023-02-20 13:31:07,070 - logger_file -INFO - User logged in into Account
+2023-02-20 13:31:07,166 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:31:07,446 - logger_file -INFO - User clicked on Edit button for last address in list
+2023-02-20 13:31:08,464 - logger_file -INFO - User entered new address information
+2023-02-20 13:31:08,550 - logger_file -INFO - User clicked on Update Your Address button
+2023-02-20 13:31:09,286 - logger_file -INFO - Address Updated Successfully
+2023-02-20 13:31:11,368 - logger_file -INFO - User is on retail website
+2023-02-20 13:31:11,368 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:31:11,478 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:31:11,696 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:31:11,762 - logger_file -INFO - User clicked on login button
+2023-02-20 13:31:12,095 - logger_file -INFO - User logged in into Account
+2023-02-20 13:31:12,210 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:31:12,499 - logger_file -INFO - User clicked on Remove button on the last address field
+2023-02-20 13:31:13,020 - logger_file -INFO - Address detail succesfully removed
+2023-02-20 13:31:15,159 - logger_file -INFO - User is on retail website
+2023-02-20 13:31:15,159 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:31:15,261 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:31:15,477 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas002@
+2023-02-20 13:31:15,537 - logger_file -INFO - User clicked on login button
+2023-02-20 13:31:15,916 - logger_file -INFO - User logged in into Account
+2023-02-20 13:31:16,019 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:31:16,332 - logger_file -INFO - User entered old password 'Lukas002@' and new password 'Lukas001@' and confirm password 'Lukas001@
+2023-02-20 13:31:16,416 - logger_file -INFO - User clicked on Change Password
+2023-02-20 13:31:17,144 - logger_file -INFO - Password Updated Successfully
+2023-02-20 13:31:19,307 - logger_file -INFO - User is on retail website
+2023-02-20 13:31:19,307 - logger_file -INFO - Actual title React App Equals Expected Ttile React App
+2023-02-20 13:31:19,396 - logger_file -INFO - User clicked on Sign In option
+2023-02-20 13:31:19,587 - logger_file -INFO - User entered email luqmon.hakim@gmail.com and password Lukas001@
+2023-02-20 13:31:19,648 - logger_file -INFO - User clicked on login button
+2023-02-20 13:31:19,987 - logger_file -INFO - User logged in into Account
+2023-02-20 13:31:20,088 - logger_file -INFO - User clicked on Account option
+2023-02-20 13:31:20,389 - logger_file -INFO - User entered old password 'Lukas001@' and new password 'Lukas002@' and confirm password 'Lukas002@
+2023-02-20 13:31:20,472 - logger_file -INFO - User clicked on Change Password
+2023-02-20 13:31:21,204 - logger_file -INFO - Password Updated Successfully

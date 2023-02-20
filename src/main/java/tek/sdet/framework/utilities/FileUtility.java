@@ -5,9 +5,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class FileUtility {
-	
+
 	public static FileInputStream getFileInputStram(String filePath) throws FileNotFoundException {
 		return new FileInputStream(new File(filePath));
 	}
-	
+
 }

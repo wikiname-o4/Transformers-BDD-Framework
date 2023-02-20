@@ -1,7 +1,8 @@
-  @RetailAccountFeatureScenario2SmokeTest @RetailAccountFeatureCompleteTest
-  Feature: Retail Application Account PAss Feature
+@RetailAccountFeatureScenario2SmokeTest @RetailAccountFeatureCompleteTest
+Feature: Retail Application Account PAss Feature
+
   Scenario Outline: Verify User can Update password
-  Given User is on retail website
+    Given User is on retail website
     When User click on Sing in option
     And User enter email 'luqmon.hakim@gmail.com' and password '<previousPassword>'
     And User click on login button
