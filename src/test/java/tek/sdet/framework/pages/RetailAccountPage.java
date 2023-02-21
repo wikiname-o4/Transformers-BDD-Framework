@@ -71,8 +71,17 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[last()]")
 	public WebElement messageBar;
 
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div")
+	public List<WebElement> messageBars;
+
 	@FindBy(xpath = "//div[contains(@class, 'false account__payment-item')][1]")
 	public WebElement firstCardSelectButton;
+
+	@FindBy(xpath = "//div[@class='account__payment-selected account__payment-item']")
+	public WebElement firstCardSelected;
+
+	@FindBy(xpath = "//div[@class='account__payment-sub']")
+	public List<WebElement> creditCards;
 
 	@FindBy(xpath = "//button[contains(@class, 'text-blue') and contains(text(), 'Edit')]")
 	public WebElement editCardButton;
@@ -82,9 +91,6 @@ public class RetailAccountPage extends BaseSetup {
 
 	@FindBy(xpath = "//button[@id='paymentSubmitBtn']")
 	public WebElement updateYourCardButton;
-
-//	@FindBy(xpath = "//p[contains(text(),'Add Address')]")
-//	public WebElement addAddressOption;
 
 	@FindBy(xpath = "//div[@class='account__address-new']")
 	public WebElement addAddressOption;
@@ -124,9 +130,6 @@ public class RetailAccountPage extends BaseSetup {
 
 	@FindBy(xpath = "//div[@class='account__address-new-modal']")
 	public WebElement newAddressPopup;
-
-	@FindBy(xpath = "//div[@class='account__address-single'][1]")
-	public WebElement addressBox;
 
 	@FindBy(xpath = "//div[@class='account__address-single'][last()]//button[@class='account__address-btn' and text()='Edit']")
 	public WebElement editAddressButton;

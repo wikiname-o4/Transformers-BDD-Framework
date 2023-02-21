@@ -10,6 +10,7 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
@@ -220,6 +221,23 @@ public class CommonUtility extends BaseSetup {
 	}
 
 	public void waitTillDisappears(WebElement element) {
-		this.getWait().until(ExpectedConditions.invisibilityOf(element));
+		try {
+			this.getWait().until(ExpectedConditions.invisibilityOf(element));
+		} catch (Exception e) {
+		}
 	}
+
+	public void waitUntilAttributeChanges(WebElement ele, String attribute) {
+		String att = ele.getAttribute(attribute);
+		this.getWait().until(new ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver driver) {
+				driver = getDriver();
+				if (!att.equals(ele.getAttribute(attribute)))
+					return true;
+				else
+					return false;
+			}
+		});
+	}
+
 }

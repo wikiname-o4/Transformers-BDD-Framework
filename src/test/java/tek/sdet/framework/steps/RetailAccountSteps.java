@@ -64,23 +64,11 @@ public class RetailAccountSteps extends CommonUtility {
 		logger.info("User clicked on " + factory.accountPage().profileChangePasswordButton.getText());
 	}
 
-//	Old Version
-//	@Then("a message should be displayed {string}")
-//	public void aMessageShouldBeDisplayed(String messageValue) {
-//		waitTillPresence(factory.accountPage().passwordUpdateSuccessMessage);
-//		Assert.assertTrue(isElementDisplayed(factory.accountPage().passwordUpdateSuccessMessage));
-//		logger.info("profile password updated succesfully");
-//	}
-
-//New Version - multi functional	
 	@Then("a message should be displayed {string}")
 	public void aMessageShouldBeDisplayed(String messageValue) {
-		try {
-			Thread.sleep(700);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		if (factory.accountPage().messageBars.size() > 1)
+			waitUntilAttributeChanges(factory.accountPage().messageBar, "id");
+		waitTillPresence(factory.accountPage().messageBars.get(factory.accountPage().messageBars.size() - 1));
 		Assert.assertEquals(messageValue, factory.accountPage().messageBar.getText());
 		logger.info(messageValue);
 	}
@@ -113,6 +101,7 @@ public class RetailAccountSteps extends CommonUtility {
 	@When("User click on Edit option of card section")
 	public void userClickOnEditOptionOfCardSection() {
 		click(factory.accountPage().firstCardSelectButton);
+		waitTillPresence(factory.accountPage().firstCardSelected);
 		logger.info("User selected first card from the list");
 		click(factory.accountPage().editCardButton);
 		logger.info("User clicked on Edit button");
@@ -145,21 +134,18 @@ public class RetailAccountSteps extends CommonUtility {
 	public void userClickOnRemoveOptionOfCardSection() {
 		click(factory.accountPage().firstCardSelectButton);
 		logger.info("User selected first card from the list");
+		countElements = factory.accountPage().creditCards.size();
 		click(factory.accountPage().removeCardButton);
 		logger.info("User clicked on remove button");
 	}
 
 	@Then("payment details should be removed")
 	public void paymentDetailsShouldBeRemoved() {
-
-//////////////////////////    Temporary solution
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-/////////////////////////
-		Assert.assertTrue(isElementDisplayed(factory.accountPage().cardNumberInput));
+		waitTillDisappears(factory.accountPage().creditCards.get(0));
+// turn of  implicit waits to avoid 20 sec waiting for NoSuchElement Exception if the last card was removed
+		turnOffImplicitWaits();
+		Assert.assertEquals(factory.accountPage().creditCards.size(), countElements - 1);
+		turnOnImplicitWaits();
 		logger.info("Card removed successfully");
 	}
 
@@ -209,29 +195,23 @@ public class RetailAccountSteps extends CommonUtility {
 		logger.info("User clicked on Update Your Address button");
 	}
 
-	public static int addressesCount;
+	public static int countElements;
 
 	@When("User click on remove option of Address section")
 	public void userClickOnRemoveOptionOfAddressSection() {
-		addressesCount = factory.accountPage().addressBoxes.size();
+		countElements = factory.accountPage().addressBoxes.size();
 		click(factory.accountPage().removeAddressButton);
 		logger.info("User clicked on Remove button on the last address field");
 	}
 
-//////////////////////////  Temporary solution 
-
 	@Then("Address details should be removed")
 	public void addressDetailsShouldBeRemoved() {
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		waitTillDisappears(factory.accountPage().addressBoxes.get(factory.accountPage().addressBoxes.size() - 1));
+// turn of  implicit waits to avoid 20 sec waiting for NoSuchElement Exception if the last address was removed
 		turnOffImplicitWaits();
-		Assert.assertEquals(factory.accountPage().addressBoxes.size(), addressesCount - 1);
+		Assert.assertEquals(factory.accountPage().addressBoxes.size(), countElements - 1);
 		turnOnImplicitWaits();
 		logger.info("Address detail succesfully removed");
 
 	}
-
 }
