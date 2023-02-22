@@ -25,8 +25,9 @@ Feature: TEK Retail Application SignIn feature
   @smokeTestCreateAccountScenario
   Scenario: Verufy user can create an account into Retail website
     And User click on Create New Account button
+    # Use keyword testData for new email every test
     And User fill the signUp information with below data
-      | name  | email                  | password  | confirmPassword |
-      | Tests | test32s3test@gmail.com | Tek@12345 | Tek@12345       |
+      | name  | email    | password  | confirmPassword |
+      | Tests | testData | Tek@12345 | Tek@12345       |
     And User click on SignUp button
     Then User should be logged into account page

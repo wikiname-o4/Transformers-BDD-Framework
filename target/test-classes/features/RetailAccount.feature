@@ -11,7 +11,8 @@ Feature: Retail Application Account Feature
   @RetailAccountFeatureScenario1SmokeTest
   Scenario: Verify User can update Profile Information
     When User click on Account option
-    And User update Name 'Luqmon' and Phone '7077777777'
+    # Use keyword testData for new phone number every test
+    And User update Name 'Luqmon' and Phone 'testData'
     And User click on Update Button
     Then User profile information should be updated
 
