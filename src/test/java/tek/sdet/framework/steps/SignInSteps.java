@@ -55,13 +55,12 @@ public class SignInSteps extends CommonUtility {
 	public void userFillTheSignUpInformationWithBelowData(DataTable dataTable) {
 		List<Map<String, String>> signUpInformation = dataTable.asMaps(String.class, String.class);
 
-		// Random email - uncomment next 2 lines for random
-//		String rands = new java.text.SimpleDateFormat("ddHHmmss").format(new java.util.Date());
-//		sendText(factory.signInPage().signUpEmailField, "test" + rands + "@gmail.com");
-
 		sendText(factory.signInPage().signUpNameField, signUpInformation.get(0).get("name"));
-//Comment next line for random email
-		sendText(factory.signInPage().signUpEmailField, signUpInformation.get(0).get("email"));
+		if (signUpInformation.get(0).get("email").equals("testData"))
+			sendText(factory.signInPage().signUpEmailField,
+					"test" + new java.text.SimpleDateFormat("ddHHmmss").format(new java.util.Date()) + "@gmail.com");
+		else
+			sendText(factory.signInPage().signUpEmailField, signUpInformation.get(0).get("email"));
 		sendText(factory.signInPage().signUpPasswordField, signUpInformation.get(0).get("password"));
 		sendText(factory.signInPage().signUpConfirmPassword, signUpInformation.get(0).get("confirmPassword"));
 		logger.info("User filled the signUp information form");

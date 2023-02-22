@@ -26,7 +26,11 @@ public class RetailAccountSteps extends CommonUtility {
 		clearTextUsingSendKeys(factory.accountPage().profileNameInputField);
 		sendText(factory.accountPage().profileNameInputField, nameValue);
 		clearTextUsingSendKeys(factory.accountPage().profilePhoneNumberField);
-		sendText(factory.accountPage().profilePhoneNumberField, phoneValue);
+		if (phoneValue.equals("testData")) {
+			sendText(factory.accountPage().profilePhoneNumberField,
+					"81" + new java.text.SimpleDateFormat("ddHHmmss").format(new java.util.Date()));
+		} else
+			sendText(factory.accountPage().profilePhoneNumberField, phoneValue);
 		logger.info("User updated name to " + nameValue + " and phone number to " + phoneValue);
 	}
 
