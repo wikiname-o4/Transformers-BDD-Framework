@@ -86,7 +86,11 @@ public class RetailAccountSteps extends CommonUtility {
 	@When("User fill Debit or credit card information")
 	public void userFillDebitOrCreditCardInformation(DataTable dataTable) {
 		List<Map<String, String>> creditCardInformation = dataTable.asMaps(String.class, String.class);
-		sendText(factory.accountPage().cardNumberInput, creditCardInformation.get(0).get("cardNumber"));
+		if (creditCardInformation.get(0).get("cardNumber").equals("testData")) {
+			sendText(factory.accountPage().cardNumberInput,
+					"46476348" + new java.text.SimpleDateFormat("ddHHmmss").format(new java.util.Date()));
+		} else
+			sendText(factory.accountPage().cardNumberInput, creditCardInformation.get(0).get("cardNumber"));
 		sendText(factory.accountPage().nameOnCardInput, creditCardInformation.get(0).get("nameOnCard"));
 		selectByValue(factory.accountPage().cardExpirationMonthInput,
 				creditCardInformation.get(0).get("expirationMonth"));

@@ -34,8 +34,9 @@ Feature: Retail Application Account Feature
     When User click on Account option
     And User click on Add a payment method link
     And User fill Debit or credit card information
-      | cardNumber       | nameOnCard      | expirationMonth | expirationYear | securityCode |
-      | 4647634817091108 | Stephon Wiegand |               7 |           2023 |          677 |
+      #use keyword testData for new card number every time
+      | cardNumber | nameOnCard   | expirationMonth | expirationYear | securityCode |
+      | testData   | Luqmon Hakim |               7 |           2023 |          677 |
     And User click on Add your card button
     Then a message should be displayed 'Payment Method added sucessfully'
 
@@ -44,8 +45,8 @@ Feature: Retail Application Account Feature
     When User click on Account option
     And User click on Edit option of card section
     And user edit information with below data
-      | cardNumber       | nameOnCard   | expirationMonth | expirationYear | securityCode |
-      | 4647634817092278 | Luqmon Hakim |               7 |           2025 |          687 |
+      | cardNumber       | nameOnCard    | expirationMonth | expirationYear | securityCode |
+      | 4647634817092278 | Luqmoni Hakim |               7 |           2025 |          687 |
     And user click on Update Your Card button
     Then a message should be displayed 'Payment Method updated Successfully'
 

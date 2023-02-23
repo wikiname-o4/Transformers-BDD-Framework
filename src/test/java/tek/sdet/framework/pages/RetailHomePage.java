@@ -90,6 +90,6 @@ public class RetailHomePage extends BaseSetup {
 	@FindBy(css = "#addPaymentBtn")
 	public WebElement checkoutAddCardButton;
 
-	@FindBy(css = "#placeOrderBtn")
+	@FindBy(xpath = "//button[@id='placeOrderBtn']")
 	public WebElement placeYourOrderButton;
 }

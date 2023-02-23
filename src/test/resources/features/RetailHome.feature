@@ -66,8 +66,9 @@ Feature: This feature is use for testing UI of Retail page
     And User click Add Your Address button
     And User click Add a Credit or Debit Card for Payment method
     And User fill Debit or credit card information
-      | cardNumber       | nameOnCard      | expirationMonth | expirationYear | securityCode |
-      | 4647634817091108 | Stephon Wiegand |               7 |           2023 |          677 |
+      # use keyword testData for new card number every time
+      | cardNumber | nameOnCard   | expirationMonth | expirationYear | securityCode |
+      | testData   | Luqmon Hakim |               7 |           2023 |          677 |
     And User click on Add your card button
     And User click on Place Your Order
     Then a message should be displayed 'Order Placed Successfully'
