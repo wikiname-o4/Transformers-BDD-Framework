@@ -1,5 +1,5 @@
-@RetailAccountFeatureScenario2SmokeTest @RetailAccountFeatureCompleteTest
-Feature: Retail Application Account PAss Feature
+@RetailAccountFeatureScenario2SmokeTest @RetailAccountFeatureCompleteTest @CompleteTest
+Feature: Retail Application Account Password Update Feature
 
   Scenario Outline: Verify User can Update password
     Given User is on retail website
