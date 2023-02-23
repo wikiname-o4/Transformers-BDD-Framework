@@ -1,5 +1,7 @@
 package tek.sdet.framework.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,6 +13,12 @@ public class RetailOrdersPage extends BaseSetup {
 	public RetailOrdersPage() {
 		PageFactory.initElements(getDriver(), this);
 	}
+
+	@FindBy(xpath = "//p[@class='order__header-btn']")
+	public List<WebElement> showHidebuttons;
+
+	@FindBy(xpath = "//button[@id='cancelBtn']")
+	public List<WebElement> cancelTheOrderButtons;
 
 	@FindBy(xpath = "(//p[@class='order__header-btn'])[1]")
 	public WebElement firstOrderShowHideButton;

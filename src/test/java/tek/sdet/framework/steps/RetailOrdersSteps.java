@@ -19,9 +19,23 @@ public class RetailOrdersSteps extends CommonUtility {
 
 	@When("User click on first order in list")
 	public void userClickOnFirstOrderInList() {
-		if (factory.ordersPage().firstOrderShowHideButton.getText().equals("Show Details")) {
-			click(factory.ordersPage().firstOrderShowHideButton);
+// Select first "NOT CANCELLED" order
+		for (int i = 0; i < factory.ordersPage().showHidebuttons.size(); i++) {
+			if (factory.ordersPage().showHidebuttons.get(i).getText().equals("Show Details")) {
+				click(factory.ordersPage().showHidebuttons.get(i));
+			}
+			turnOffImplicitWaits();
+			if (factory.ordersPage().cancelTheOrderButtons.size() == 1) {
+				break;
+			}
 		}
+		turnOnImplicitWaits();
+
+// Select first order
+
+//		if (factory.ordersPage().firstOrderShowHideButton.getText().equals("Show Details")) {
+//			click(factory.ordersPage().firstOrderShowHideButton);
+//		}
 		logger.info("User clicked on first order in list");
 
 	}
