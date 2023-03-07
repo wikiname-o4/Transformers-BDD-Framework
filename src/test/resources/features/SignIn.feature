@@ -18,9 +18,9 @@ Feature: TEK Retail Application SignIn feature
     Then User should be logged in into Account
 
     Examples: 
-      | email                     | password  |
-      | transformers@tekschool.us | Tek@12345 |
-      | luqmon.hakim@gmail.com    | Lukas002@ |
+      | email                  | password   |
+      | mytest21@gmail.com     | Test@12345 |
+      | luqmon.hakim@gmail.com | Lukas002@  |
 
   @smokeTestCreateAccountScenario
   Scenario: Verufy user can create an account into Retail website
