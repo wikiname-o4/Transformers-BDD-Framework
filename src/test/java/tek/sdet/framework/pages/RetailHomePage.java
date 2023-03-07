@@ -44,6 +44,9 @@ public class RetailHomePage extends BaseSetup {
 
 	@FindBy(xpath = "//a[text()='Account']")
 	public WebElement accountOption;
+	
+	@FindBy(xpath="//button[@id='logoutBtn']")
+	public WebElement logOutOption;
 
 	@FindBy(id = "hamburgerBtn")
 	public WebElement allIcon;
