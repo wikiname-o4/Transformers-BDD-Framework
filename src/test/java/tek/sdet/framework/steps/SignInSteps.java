@@ -40,7 +40,7 @@ public class SignInSteps extends CommonUtility {
 
 	@Then("User should be logged in into Account")
 	public void userShouldBeLoggedInIntoAccount() {
-		Assert.assertTrue(isElementDisplayed(factory.homePage().accountOption));
+		Assert.assertTrue(isElementDisplayed(factory.homePage().logOutOption));
 		logger.info("User logged in into Account");
 	}
 
