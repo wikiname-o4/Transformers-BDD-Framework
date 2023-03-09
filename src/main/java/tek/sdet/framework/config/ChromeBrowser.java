@@ -14,7 +14,7 @@ public class ChromeBrowser implements Browser {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions ops = new ChromeOptions();
 		ops.addArguments("--remote-allow-origins=*");
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(ops);
 		driver.get(url);
 		return driver;
 	}
